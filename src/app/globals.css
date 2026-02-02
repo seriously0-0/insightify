@@ -19,10 +19,13 @@
   }
 }
 
+<<<<<<< HEAD
 html {
   scroll-behavior: smooth;
 }
 
+=======
+>>>>>>> d29f36b (start project)
 body {
   background: var(--background);
   color: var(--foreground);
