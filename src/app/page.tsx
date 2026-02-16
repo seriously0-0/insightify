@@ -1,22 +1,23 @@
-import Navbar from "@/components/layout/Navbar"
-import Hero from "@/components/sections/Hero"
+
+
+import Navbar from "@/components/layout/Navbar";
+import Hero from "@/components/sections/Hero";
 import Features from "@/components/sections/Features";
-import Pricing from "@/components/sections/pricing";
-import Footer from "@/components/layout/Footer";
+import Pricing from "@/components/sections/Pricing";
 import About from "@/components/sections/About";
 import CTA from "@/components/sections/CTA";
+import Footer from "@/components/layout/Footer";
 
-
-export default function Home(){
-  return(
-    <main>
-      <Navbar></Navbar>
-      <Hero></Hero>
-      <Features></Features>
-      <Pricing></Pricing>
+export default function Home() {
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <Features />
+      <Pricing />
       <About />
       <CTA />
-      <Footer></Footer>
-    </main>
-  )
+      <Footer />
+    </>
+  );
 }

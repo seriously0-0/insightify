@@ -1,3 +1,6 @@
+import Link from "next/link";
+
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen pt-28 flex items-center justify-center bg-gradient-to-br from-slate-900 via-indigo-950 to-black text-white px-6 overflow-hidden">
@@ -11,9 +14,9 @@ export default function Hero() {
           Analyze, visualize, and grow your business with real-time intelligent analytics.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 transition font-semibold">
+          <Link href="./signup" className="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 transition font-semibold">
             Get Started
-          </button>
+          </Link>
           <button className="px-6 py-3 rounded-xl border border-gray-500 hover:border-white transition">
             View Demo
           </button>
