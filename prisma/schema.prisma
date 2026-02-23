@@ -33,7 +33,21 @@ model Account {
   accessToken       String
   tokenExpireAt     DateTime
   createdAt         DateTime
-
+  posts             Post[]
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Post {
+  id                String @id @default(uuid())
+  InstagramPostId   String @unique
+  instgramAccountId String
+  caption           String?
+  mediaType         String
+  mediaUrl          String?
+  PostAt            DateTime
+  createdAt         DateTime
+
+  account    Account @relation(fields: [instgramAccountId], references: [id], onDelete: Cascade)
+  //metrics    postMetric[]
 }
 
